@@ -134,13 +134,13 @@ translator:
     - xform/x/sh/
     - xform/nk/ngh/
     - xform/r/gh/
-    - xform/o$/oa/
+    - xform/o\b/oa/
     - xform/au/o/
     - xform/oa/au/
     - xform/eu/eo/
     - xform/oe/eu/
     - xform/eo/oe/
-    - xform/i$/ie/
+    - xform/i\b/ie/
     - xform/ij/i/
     - xform/el/er/
 
