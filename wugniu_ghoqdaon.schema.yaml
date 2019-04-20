@@ -76,28 +76,45 @@ speller:
     - xform/eu/eo/
     - xform/oe/eu/
     - xform/eo/oe/
+    - xform/aq/aeq/
+    - xform/aoq/aq/
     - xform/i$/ie/
     - xform/ij/i/
     - xform/el/er/
 
     # 模糊音
 
-    # 模糊“從”“邪”
-    - derive/dz/z/
-    # 模糊前後aq
-    - derive/aoq/aq/
-    # 模糊“蘭”“雷”
-    - derive/ae$/e/
-    # 模糊分尖團音
-    - derive/ts(h?)i/c$1i/
-    - derive/dzi/ji/
-    - derive/^(s|z)i/$1hi/
-    # 模糊“書”“詩”
-    - derive/(?<=[szh])yu/y/
-    # 模糊“煙”“衣”
-    - derive/ie$/i/
-    # 模糊前後an
-    - derive/aon/an/
+    # “從”“邪”不分
+    - xform/dz/z/
+    # 前後aq不分
+    - xform/aeq/aq/
+    # “蘭”“雷”不分
+    - xform/ae$/e/
+    # 尖團不分
+    - xform/ts(h?)i/c$1i/
+    - xform/dzi/ji/
+    - xform/^(s|z)i/$1hi/
+    # “書”“詩”不分
+    - xform/(?<=[szh])yu/y/
+    # “煙”“衣”不分
+    - xform/ie$/i/
+    # 前後an不分
+    - xform/aon/an/
+    # 模糊“約”“一” “藥”“頁”
+    - derive/iaq/iq/
+    - derive/yaq/yiq/
+    # 模糊“搭”“得”
+    - derive/(?<!i)aq/eq/
+    - derive/eq/aq/
+    # 模糊“遠”“與” “宛”“餵”
+    - derive/(?<=y|i)oe/u/
+    # 模糊“無”“何”
+    - derive/vu/wu/
+    # 模糊“碗”“按” “換”“汗”
+    - derive/uoe/oe/
+    - derive/woe/ghoe/
+    # 模糊“查”“坐”
+    - derive/o$/u/
 
     # 清鼻邊音
     - derive/([mnl]|ng)h/$1/
@@ -120,21 +137,6 @@ speller:
     - derive/ao/oa/
     # 容錯 ae => ea
     - derive/ae/ea/
-    # 模糊“約”“一” “藥”“頁”
-    - derive/iaq/iq/
-    - derive/yaq/yiq/
-    # 模糊“搭”“得”
-    - derive/(?<!i)aq/eq/
-    - derive/eq/aq/
-    # 模糊“遠”“與” “宛”“餵”
-    - derive/(?<=y|i)oe/u/
-    # 模糊“無”“何”
-    - derive/vu/wu/
-    # 模糊“碗”“按” “換”“汗”
-    - derive/uoe/oe/
-    - derive/woe/ghoe/
-    # 模糊“查”“坐”
-    - derive/o$/u/
 
 # 主翻譯器
 translator:
@@ -149,15 +151,34 @@ translator:
     - xform/x/sh/
     - xform/nk/ngh/
     - xform/r/gh/
-    - xform/o\b/oa/
+    - xform/o$/oa/
     - xform/au/o/
     - xform/oa/au/
     - xform/eu/eo/
     - xform/oe/eu/
     - xform/eo/oe/
-    - xform/i\b/ie/
+    - xform/aq/aeq/
+    - xform/aoq/aq/
+    - xform/i$/ie/
     - xform/ij/i/
     - xform/el/er/
+
+    # “從”“邪”不分
+    - xform/dz/z/
+    # 前後aq不分
+    - xform/aeq/aq/
+    # “蘭”“雷”不分
+    - xform/ae\b/e/
+    # 尖團不分
+    - xform/ts(h?)i/c$1i/
+    - xform/dzi/ji/
+    - xform/^(s|z)i/$1hi/
+    # “書”“詩”不分
+    - xform/(?<=[szh])yu/y/
+    # “煙”“衣”不分
+    - xform/ie\b/i/
+    # 前後an不分
+    - xform/aon/an/
 
 # 副翻譯器1 朙月拼音
 luna_pinyin:

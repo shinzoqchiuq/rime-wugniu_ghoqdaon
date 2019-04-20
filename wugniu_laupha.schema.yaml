@@ -76,6 +76,8 @@ speller:
     - xform/eu/eo/
     - xform/oe/eu/
     - xform/eo/oe/
+    - xform/aq/aeq/
+    - xform/aoq/aq/
     - xform/i$/ie/
     - xform/ij/i/
     - xform/el/er/
@@ -85,7 +87,7 @@ speller:
     # 模糊“從”“邪”
     - derive/dz/z/
     # 模糊前後aq
-    - derive/aoq/aq/
+    - derive/aeq/aq/
     # 模糊“蘭”“雷”
     - derive/ae$/e/
     # 模糊分尖團音
