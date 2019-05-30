@@ -4,7 +4,7 @@
 schema:
   schema_id: wugniu_ghoqdaon
   name: 上海吳語（新派）學堂式吳語拼音
-  version: "2019.05.07"
+  version: "2019.05.30"
   author:
     - 碼表製作：上海閒話abc <tzyyiggnih@yahoo.com.cn>
     - 碼表製作：吳語越音 <zhufya@mail.ustc.edu.cn>
@@ -124,7 +124,7 @@ speller:
     - derive/kni/nhi/
     # 簡拼
     - abbrev/^([a-z]).+$/$1/
-    - abbrev/^([pmtnlszkg]h|[kg]n|ngh?|tsh?|dz).+$/$1/
+    - abbrev/^([pmtnlszckg]h|[kg]n|ngh?|tsh?|dz).+$/$1/
     # 容錯 au => ao
     - derive/au/ao/
     # c組聲母後自動加i
