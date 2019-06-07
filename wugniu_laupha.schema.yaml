@@ -4,7 +4,7 @@
 schema:
   schema_id: wugniu_laupha
   name: 上海吳語（老派）學堂式吳語拼音
-  version: "2019.05.30"
+  version: "2019.06.07"
   author:
     - 碼表製作：上海閒話abc <tzyyiggnih@yahoo.com.cn>
     - 碼表製作：吳語越音 <zhufya@mail.ustc.edu.cn>
@@ -63,6 +63,7 @@ speller:
   alphabet: abcdefghijklmnopqrstuvwxyz
   delimiter: " '"
   algebra:
+    - xform/^([b-df-hj-np-tv-z])$/$1_/
     # 轉換爲學堂式吳語拼音
     - xform/ts/tsh/
     - xform/tz/ts/
