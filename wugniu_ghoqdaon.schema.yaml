@@ -4,7 +4,7 @@
 schema:
   schema_id: wugniu_ghoqdaon
   name: 上海吳語（新派）學堂式吳語拼音
-  version: "2019.07.13"
+  version: "2019.08.25"
   author:
     - 碼表製作：上海閒話abc <tzyyiggnih@yahoo.com.cn>
     - 碼表製作：吳語越音 <zhufya@mail.ustc.edu.cn>
@@ -69,7 +69,6 @@ speller:
     - xform/tz/ts/
     - xform/dj/j/
     - xform/x/sh/
-    - xform/nk/ngh/
     - xform/r/gh/
     - xform/o$/oa/
     - xform/au/o/
@@ -118,14 +117,15 @@ speller:
     - derive/o$/u/
 
     # 清鼻邊音
-    - derive/([mnl]|ng)h/$1/
+    - derive/([mnl])h/$1/
     - derive/kn/gn/
+    - derive/nk/ng/
     # 容錯 gn => n kn => nh
     - derive/gni/ni/
     - derive/kni/nhi/
     # 簡拼
     - abbrev/^([a-z]).+$/$1/
-    - abbrev/^([pmtnlszckg]h|[kg]n|ngh?|tsh?|dz).+$/$1/
+    - abbrev/^([pmtnlszckg]h|[kg]n|n[kg]|tsh?|dz).+$/$1/
     # 容錯 au => ao
     - derive/au/ao/
     # c組聲母後自動加i
