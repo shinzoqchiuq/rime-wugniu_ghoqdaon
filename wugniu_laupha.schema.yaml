@@ -4,7 +4,7 @@
 schema:
   schema_id: wugniu_laupha
   name: 上海吳語（老派）學堂式吳語拼音
-  version: "2019.08.25"
+  version: "2019.09.10"
   author:
     - 碼表製作：上海閒話abc <tzyyiggnih@yahoo.com.cn>
     - 碼表製作：吳語越音 <zhufya@mail.ustc.edu.cn>
@@ -123,6 +123,10 @@ speller:
     - derive/ao/oa/
     # 容錯 ae => ea
     - derive/ae/ea/
+    # 容錯 y => ghi
+    - derive/yi|y(?=[aeou])/ghi/
+    # 容錯 w => ghu
+    - derive/wu|w(?=[aeo])/ghu/
 
 # 主翻譯器
 translator:
