@@ -4,11 +4,11 @@
 schema:
   schema_id: wugniu_ghoqdaon
   name: 上海吳語（新派）學堂式吳語拼音
-  version: "2019.09.10"
+  version: "2019.12.01"
   author:
     - 碼表製作：上海閒話abc <tzyyiggnih@yahoo.com.cn>
     - 碼表製作：吳語越音 <zhufya@mail.ustc.edu.cn>
-    - 方案修改：Electric Sheep ˂1613023143@qq.com˃
+    - 方案修改：Electric Sheep <shinzoqchiuq@outlook.com>
   description: |
     上海言話（新派）
     拼寫方案採用學堂式吳語拼音
